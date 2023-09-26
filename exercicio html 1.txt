@@ -1,0 +1,42 @@
+Em um arquivo aparte, associe cada tag HTML com o respectivo número da área que o representa 
+(Exemplo: 1. footer, 2. input, etc...), suba esse arquivo para algum repositório e compartilhe o 
+link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+<html>
+	<head>
+	</head>
+	<body>
+		<header><!-- 1 -->
+			<nav><!-- 3 -->
+			</nav>
+		</header>
+		<main><!-- 2 -->
+			<img src="#"/><!-- 4 -->
+			<h1>Proz</h1><!-- 5 -->
+			<h2>Qualidade do curso</h2><!-- 6 -->
+			<p>Todos os nossos cursos são reconhecidos pelo MEC. Todas as unidade Proz aprovadas pelas...</p><!-- 7 -->
+			<a href="#">politicas de privacidade</a><!-- 8 -->
+		</main>
+		<footer><!-- 9 -->
+			<ul><!-- 10 -->
+				<li>Area de Saúde</li><!-- 11 -->
+				<li>Area de Tecnologia</li>
+				<li>Area de Gestão</li>
+			</ul>
+		</footer>
+		<div class="modal">
+			<form><!-- 12 -->
+				<label>Nome*</label><!-- 13 -->
+				<input type="text" name="nome"/><!-- 14 -->
+				<label>Email*</label>
+				<input type="email" name="nome"/>
+				<label>Estado*</label>
+				<select><!-- 15 -->
+					<option>PE</option>
+					<option>CE</option>
+					<option>SP</option>
+				</select>
+				<button type="submit">Quero receber os conteúdos da Proz!</button><!-- 16 -->
+			</form>
+		</div>
+	</body>
+</html>
