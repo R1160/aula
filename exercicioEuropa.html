@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			*{
+				margin:0;
+				pradding:0;
+			}
+			body {
+			  font-family: Arial, sans-serif;
+			}
+			.bloco{
+				width: 25%;
+				height: 550px;
+				float:left;
+				position:relative;
+			}
+			.bloco img{
+				width:100%;
+				height:100%;
+				object-fit: cover;
+				object-position:center;
+			}
+			.conteudo-bloco{
+				position: absolute;
+				bottom: 0;
+				width:100%;
+				height:55%;
+				background-color:rgba(0, 0, 0, 0.6);
+				opacity:0;
+				transition: 1.5s;
+			}
+			.tit-bloco{
+				width: 100%;
+				text-align:center;
+				font-size: 25pt;
+				color: #ff8800;
+				margin-top: 5%;
+				opacity: 0;
+				transform: translate3d(0,100px,0);
+				transition: 1.5s;
+			}
+			.texto-bloco{
+				width: 90%;
+				text-align:justify;
+				margin: 5%;
+				font-size: 14pt;
+				color: #fff;
+				margin-top: 5%;
+				opacity: 0;
+				transform: translate3d(0,100px,0);
+				transition: 1.5s;
+			}
+			.bloco:hover .conteudo-bloco{
+				 opacity:1;
+			}
+			.bloco:hover .tit-bloco{
+				 opacity:1;
+				 transform: translate3d(0,0,0);
+			}
+			.bloco:hover .texto-bloco{
+				 opacity:1;
+				 transform: translate3d(0,0,0);
+			}
+			.capa-titulo{
+				width: 100%;
+				height: 40vh;
+				background: url(https://a.cdn-hotels.com/gdcs/production100/d769/2f206564-f956-43b1-8ebc-b0ea49b41e2c.jpg?impolicy=fcrop&w=1600&h=1066&q=medium);
+				background-position: center bottom;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+			.capa-escura{
+				width: 100%;
+				height: 100%;
+				background-color:rgba(0, 0, 0, 0.6);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.titulo{
+				color:#fff;
+				font-size: 35pt;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="capa-titulo">
+			<div class="capa-escura">
+				<h1 class="titulo">Lugares Turísticos na Europa</h1>
+			</div>
+			
+		</div>
+		
+		<div class="bloco">
+			<img class="img-bloco" src="https://prefiroviajar.com.br/wp-content/uploads/2016/06/barcelona-prefiro-viajar.jpg" alt="Espanha"/>
+			<div class="conteudo-bloco">
+				<h1 class="tit-bloco">Espanha: Sagrada Família em Barcelona</h1>
+				<p class="texto-bloco">Os principais pontos turísticos de Barcelona e da Espanha foram construídos pelo famoso arquiteto Antoni Gaudì. A principal obra e o ponto turístico mais famoso que ele construiu é a Sagrada Família de Barcelona, uma igreja com uma grandeza incomparável e que ainda não está acabada, pela enorme quantidade de detalhes e pelo tamanho que foi projetada.</p>
+			</div>
+		</div>
+		<div class="bloco">
+			<img class="img-bloco" src="https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2019/10/berlim-portao-de-brandemburgo.jpg?w=750&ssl=1" alt="Alemanha"/>
+			<div class="conteudo-bloco">
+				<h1 class="tit-bloco">Portão de Brandemburgo em Berlim, Alemanha</h1>
+				<p class="texto-bloco">O portão, que é um dos pontos turísticos na Europa mais famosos, conta ainda com alto relevos neoclássicos, esculturas de Johann Gottfried Schadow e um carro de duas rodas puxado por cavalos e com Irene, deusa grega da paz.</p>
+			</div>
+		</div>
+		<div class="bloco">
+			<img class="img-bloco" src="https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2019/06/roma-coliseu.jpg?w=750&ssl=1" alt="Itália"/>
+			<div class="conteudo-bloco">
+				<h1 class="tit-bloco">Coliseu em Roma, Itália</h1>
+				<p class="texto-bloco">O Coliseu, cujo nome oficial é Anfiteatro Flaviano, começou a ser construído em 72 d.C e demorou oito anos para ficar pronto. A construção, de concreto e areia, foi comandada pelo imperador Flávio Vespasiano – homenageado pelo filho Tito, que governava Roma quando as obras acabaram.</p>
+			</div>
+		</div>
+		<div class="bloco">
+			<img class="img-bloco" src="https://itaseguroviagem.com.br/wp-content/uploads/2023/02/pontos-turisticos-da-europa.jpg" alt="França"/>
+			<div class="conteudo-bloco">
+				<h1 class="tit-bloco">Torre Eiffel em Paris, França</h1>
+				<p class="texto-bloco">A Torre Eiffel foi construída para a Exposição Universal de 1889, que celebrava os 100 anos da Revolução Francesa. Uma competição de design arquitetônico selecionou o projeto do engenheiro Gustave Eiffel, que projetou o monumento como arco de entrada da exposição, no Champ de Mars.</p>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
