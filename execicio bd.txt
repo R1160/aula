@@ -1,0 +1,29 @@
+
+CREATE DATABASE MinhaBaseDeDados;
+
+USE MinhaBaseDeDados;
+
+CREATE TABLE Clientes (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100)
+);
+
+CREATE TABLE Pedidos (
+    id INT PRIMARY KEY,
+    id_cliente INT,
+    dt_pedido DATE,
+    FOREIGN KEY (id_cliente) REFERENCES Clientes(id)
+);
+
+INSERT INTO Clientes (id, nome, email) VALUES
+    (1, 'Pedro', 'pedro@gmail.com'),
+    (2, 'Sophie', 'sophie@gmail.com');
+
+INSERT INTO Pedidos (id, id_cliente, dt_pedido) VALUES
+    (1, 1, '2023-12-06'),
+    (2, 2, '2023-12-06');
+
+SELECT c.Nome, p.PedidoID, p.DataPedido
+FROM Clientes c, Pedidos p
+WHERE Clientes.ClienteID = Pedidos.ClienteID;
