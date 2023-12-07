@@ -1,0 +1,12 @@
+DELIMITER //
+CREATE PROCEDURE relatorio()
+
+    BEGIN
+		
+		SELECT produto, SUM(quantidade) AS total, data FROM venda
+		GROup BY data;
+
+
+    END //
+
+DELIMITER ;
